@@ -22,6 +22,10 @@
         h2 {
             text-align: center;
             color: #333;
+            font-size: 20px;
+        }
+        h3{
+            font-size: 17px;
         }
         form {
             display: flex;
@@ -47,11 +51,50 @@
         button:hover {
             background-color: #45a049;
         }
+        .follow-section {
+            margin: 50px auto;
+            padding: 20px;
+            max-width: 500px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .profile-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+
+        }
+        .profile-container img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .profile-container h1{
+            font-size: 15px;
+        }
+        .profile-container button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 12px 18px;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+            align-items: center;
+        
+        }
+        .profile-container button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
     <div class="form-container">
-        <h2>Register for the Poetry Event</h2>
+        <h2>INTERNATIONAL POETRY AND MUSIC ZOOM EVENT 2025</h2>
         <form action="https://formsubmit.co/poetryevent2025@gmail.com" method="POST">
             <!-- Hidden input to specify the recipient email -->
             <input type="hidden" name="_captcha" value="false">
@@ -73,6 +116,20 @@
 
             <button type="submit">Submit</button>
         </form>
+    </div>
+
+    <div class="follow-section">
+        <h3>Follow the Event Organizers for more</h3>
+        <div class="profile-container">
+            <img src="image01.jpg" alt="Organizer 1">
+            <h1>@sweetcoolkitty  </h1>
+            <button onclick="window.open('https://www.instagram.com/sweetcoolkitty/', '_blank')">Follow</button>
+        </div>
+        <div class="profile-container">
+            <img src="image02.jpg" alt="Organizer 2">
+            <h1>@nusahmoseif99  </h1>
+            <button onclick="window.open('https://www.instagram.com/nusahmoseif99/?hl=en', '_blank')">Follow</button>
+        </div>
     </div>
 </body>
 </html>
